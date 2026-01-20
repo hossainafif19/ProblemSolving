@@ -1,0 +1,13 @@
+PHASE 0 – PROGRAMMING WARM-UP
+
+1. Print numbers from 1 to N
+2. Sum of first N natural numbers
+3. Check even or odd
+4. Find maximum of two numbers
+5. Count digits of a number
+
+KEY LEARNINGS:
+- Loops
+- Conditions
+- Input/output
+- Integer manipulation

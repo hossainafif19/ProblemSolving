@@ -1,0 +1,14 @@
+PHASE 1 – BASIC LOGIC BUILDING
+
+1. Reverse a number
+2. Palindrome number check
+3. Prime number check
+4. Fibonacci series (loop based)
+5. Armstrong number (generalized)
+
+KEY LEARNINGS:
+- Digit extraction
+- State preservation
+- Mathematical logic
+- Nested loops
+- Problem decomposition

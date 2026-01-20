@@ -1,0 +1,24 @@
+LANGUAGE: C#
+
+GOAL:
+Rebuild data structures, algorithms, and problem-solving skills
+from beginner level to interview-ready.
+
+PHASES:
+Phase 0 – Programming Basics
+Phase 1 – Logic Building
+Phase 2 – Arrays
+Phase 3 – Strings
+Phase 4 – Time & Space Complexity
+Phase 5 – Hashing
+Phase 6 – Linked List
+Phase 7 – Stack & Queue
+Phase 8 – Recursion
+Phase 9 – Trees
+Phase 10 – Searching & Sorting
+
+METHOD:
+- One problem at a time
+- Write code first
+- Review logic
+- Understand edge cases
