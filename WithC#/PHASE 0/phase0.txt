@@ -1,13 +1,112 @@
-PHASE 0 – PROGRAMMING WARM-UP
+PHASE 0 — PROGRAMMING WARM-UP
+GOAL: Remove rust and rebuild basic logical thinking
 
-1. Print numbers from 1 to N
-2. Sum of first N natural numbers
-3. Check even or odd
-4. Find maximum of two numbers
-5. Count digits of a number
+--------------------------------------------------
+PROBLEM 1: Print Numbers from 1 to N
 
-KEY LEARNINGS:
-- Loops
-- Conditions
-- Input/output
-- Integer manipulation
+Problem Statement:
+Given an integer N, print all numbers from 1 to N (inclusive).
+
+Rules (Strict):
+- Use loop only
+- No built-in shortcuts
+
+Think Before Coding:
+- Where does counting start?
+- Where does it stop?
+- How many times will the loop run?
+
+Your Task:
+- Read N
+- Print numbers from 1 to N
+
+Key Lesson:
+- Loop boundaries
+- Counting logic
+--------------------------------------------------
+
+PROBLEM 2: Sum of First N Natural Numbers
+
+Problem Statement:
+Given an integer N, calculate the sum from 1 to N.
+
+Rules (Strict):
+- Use loop
+- Do not use formula
+
+Think Before Coding:
+- How will you accumulate values?
+- What should the initial sum be?
+
+Your Task:
+- Read N
+- Add numbers from 1 to N
+- Print sum
+
+Key Lesson:
+- Accumulator pattern
+--------------------------------------------------
+
+PROBLEM 3: Check Even or Odd
+
+Problem Statement:
+Check whether a given integer is even or odd.
+
+Rules (Strict):
+- Use modulus operator (%)
+
+Think Before Coding:
+- What does % 2 return?
+- When is a number even?
+
+Your Task:
+- Read number
+- Print Even or Odd
+
+Key Lesson:
+- Modulus operator
+- Conditional logic
+--------------------------------------------------
+
+PROBLEM 4: Find Maximum of Two Numbers
+
+Problem Statement:
+Given two integers, print the greater one.
+If both are equal, print “Both are equal”.
+
+Rules (Strict):
+- Use if-else only
+
+Think Before Coding:
+- How many comparisons are needed?
+- How to check equality?
+
+Your Task:
+- Read two numbers
+- Compare and print result
+
+Key Lesson:
+- Conditional branching
+--------------------------------------------------
+
+PROBLEM 5: Count Digits of a Number
+
+Problem Statement:
+Count how many digits an integer contains.
+
+Rules (Strict):
+- Do NOT convert to string
+- Use division only
+
+Think Before Coding:
+- How do you remove the last digit?
+- When should the loop stop?
+
+Your Task:
+- Read number
+- Count digits using loop
+
+Key Lesson:
+- Integer division
+- Loop termination
+--------------------------------------------------

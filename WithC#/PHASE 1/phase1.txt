@@ -1,14 +1,106 @@
-PHASE 1 – BASIC LOGIC BUILDING
+PHASE 1 — BASIC LOGIC BUILDING
+GOAL: Learn how to think step-by-step and decompose problems
 
-1. Reverse a number
-2. Palindrome number check
-3. Prime number check
-4. Fibonacci series (loop based)
-5. Armstrong number (generalized)
+--------------------------------------------------
+PROBLEM 1: Reverse a Number
 
-KEY LEARNINGS:
+Problem Statement:
+Reverse a given positive integer.
+
+Rules (Strict):
+- No string conversion
+- Use math only
+
+Think Before Coding:
+- How to extract last digit?
+- How to build reversed number?
+
+Your Task:
+- Reverse digits using loop
+
+Key Lesson:
 - Digit extraction
-- State preservation
-- Mathematical logic
+- State transformation
+--------------------------------------------------
+
+PROBLEM 2: Palindrome Number
+
+Problem Statement:
+Check whether a number is a palindrome.
+
+Rules (Strict):
+- No string conversion
+
+Think Before Coding:
+- How to preserve original value?
+- What should be compared?
+
+Your Task:
+- Reverse number
+- Compare with original
+
+Key Lesson:
+- Preserve state
+--------------------------------------------------
+
+PROBLEM 3: Prime Number Check
+
+Problem Statement:
+Check whether a number is prime.
+
+Rules (Strict):
+- No built-in prime checks
+
+Think Before Coding:
+- What defines a prime number?
+- When can we stop early?
+
+Your Task:
+- Check divisibility from 2 to N-1
+
+Key Lesson:
+- Early termination
+- Correct loop boundaries
+--------------------------------------------------
+
+PROBLEM 4: Fibonacci Series
+
+Problem Statement:
+Print first N Fibonacci numbers.
+
+Rules (Strict):
+- Loop only
+- No recursion
+- No arrays
+
+Think Before Coding:
+- What two values must be remembered?
+
+Your Task:
+- Generate Fibonacci iteratively
+
+Key Lesson:
+- State shifting
+--------------------------------------------------
+
+PROBLEM 5: Armstrong Number
+
+Problem Statement:
+Check whether a number is an Armstrong number.
+
+Rules (Strict):
+- No string conversion
+- Use math only
+
+Think Before Coding:
+- How many digits?
+- How to compute power?
+
+Your Task:
+- Sum digit^count
+- Compare with original
+
+Key Lesson:
 - Nested loops
-- Problem decomposition
+- Generalized logic
+--------------------------------------------------

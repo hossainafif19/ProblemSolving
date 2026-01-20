@@ -1,0 +1,136 @@
+PHASE 2 — ARRAYS
+GOAL: Build index-based problem-solving (interview foundation)
+
+--------------------------------------------------
+PROBLEM 1: Find Largest Element in Array
+
+Problem Statement:
+Find the maximum element in an array.
+
+Rules (Strict):
+- No LINQ
+- No sorting
+
+Think Before Coding:
+- What should be initial max?
+
+Your Task:
+- Traverse array
+- Track maximum
+
+Key Lesson:
+- Proper initialization
+--------------------------------------------------
+
+PROBLEM 2: Find Smallest Element in Array
+
+Problem Statement:
+Find the minimum element in an array.
+
+Rules (Strict):
+- Loop only
+
+Think Before Coding:
+- How to update minimum?
+
+Your Task:
+- Traverse array
+- Track minimum
+
+Key Lesson:
+- Comparison logic
+--------------------------------------------------
+
+PROBLEM 3: Reverse an Array
+
+Problem Statement:
+Reverse array in place.
+
+Rules (Strict):
+- No extra array
+
+Think Before Coding:
+- Which elements swap?
+- When to stop?
+
+Your Task:
+- Use two-pointer logic
+
+Key Lesson:
+- In-place operations
+--------------------------------------------------
+
+PROBLEM 4: Count Even and Odd Numbers
+
+Problem Statement:
+Count even and odd numbers in an array.
+
+Rules (Strict):
+- No LINQ
+
+Think Before Coding:
+- What makes a number even?
+
+Your Task:
+- Traverse and count
+
+Key Lesson:
+- Pattern selection matters
+--------------------------------------------------
+
+PROBLEM 5: Find Second Largest Element
+
+Problem Statement:
+Find second largest distinct element.
+
+Rules (Strict):
+- No sorting
+- No LINQ
+
+Think Before Coding:
+- Track two values
+- Handle duplicates
+
+Your Task:
+- Maintain invariants
+
+Key Lesson:
+- Sentinel pitfalls
+- Robust logic
+--------------------------------------------------
+
+PROBLEM 6: Check if Array Is Sorted
+
+Problem Statement:
+Check if array is sorted in ascending order.
+
+Rules (Strict):
+- One pass
+
+Think Before Coding:
+- When can we say “Not Sorted”?
+
+Your Task:
+- Compare adjacent elements
+
+Key Lesson:
+- Early exit
+--------------------------------------------------
+
+PROBLEM 7: Check if Array Is Palindrome
+
+Problem Statement:
+Check whether array reads same forward and backward.
+
+Rules (Strict):
+- No extra array
+
+Think Before Coding:
+- Compare symmetric elements
+
+Your Task:
+- Use two-pointer logic
+
+Key Lesson:
+- Symmetry comparison
+--------------------------------------------------
