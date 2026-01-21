@@ -1,0 +1,224 @@
+PHASE 3 — STRINGS
+GOAL:
+Build character-level problem-solving skills.
+Learn how strings behave differently from arrays,
+and how to handle immutability, indexing, and frequency logic.
+
+IMPORTANT:
+Strings are immutable in C#.
+Efficiency and correctness both matter in this phase.
+
+--------------------------------------------------
+PROBLEM 1: Reverse a String
+
+Problem Statement:
+Given a string, reverse it and print the result.
+
+Example:
+Input: hello
+Output: olleh
+
+Rules (Strict):
+- No LINQ
+- No built-in Reverse()
+- Index-based logic only
+
+Think Before Coding:
+- Are strings mutable?
+- How can array logic be reused?
+
+Your Task:
+- Reverse the string using loop logic
+
+Key Lesson:
+- String immutability
+- Reverse logic reuse
+--------------------------------------------------
+
+--------------------------------------------------
+PROBLEM 2: Check Palindrome String
+
+Problem Statement:
+Check whether a given string is a palindrome.
+
+Example:
+Input: madam
+Output: Palindrome
+
+Rules (Strict):
+- No reverse string creation
+- No LINQ
+- Index-based comparison only
+
+Think Before Coding:
+- Which characters should be compared?
+- When can you stop early?
+
+Your Task:
+- Compare characters from both ends
+
+Key Lesson:
+- Two-pointer comparison
+- Early exit
+--------------------------------------------------
+
+--------------------------------------------------
+PROBLEM 3: Count Vowels and Consonants
+
+Problem Statement:
+Count vowels and consonants in a string.
+
+Example:
+Input: hello world
+Output:
+Vowels = 3
+Consonants = 7
+
+Rules (Strict):
+- Ignore spaces
+- Case-insensitive
+- Letters only
+- No LINQ
+
+Think Before Coding:
+- How to detect letters?
+- How to classify vowels?
+
+Your Task:
+- Traverse string
+- Count vowels and consonants
+
+Key Lesson:
+- Character classification
+--------------------------------------------------
+
+--------------------------------------------------
+PROBLEM 4: Find Duplicate Characters in a String
+
+Problem Statement:
+Print characters that appear more than once.
+
+Example:
+Input: programming
+Output:
+r
+g
+m
+
+Rules (Strict):
+- Ignore spaces
+- Case-sensitive
+- No LINQ
+
+Think Before Coding:
+- How to count occurrences?
+- How to avoid repeated printing?
+
+Your Task:
+- Use frequency counting
+
+Key Lesson:
+- Hashing for duplicates
+--------------------------------------------------
+
+--------------------------------------------------
+PROBLEM 5: Check if Two Strings Are Anagrams
+
+Problem Statement:
+Check whether two strings are anagrams.
+
+Example:
+Input:
+listen
+silent
+Output:
+Anagram
+
+Rules (Strict):
+- Ignore spaces
+- Case-sensitive
+- No sorting
+- No LINQ
+
+Think Before Coding:
+- What defines an anagram?
+- How can frequency help?
+
+Your Task:
+- Compare character frequencies
+
+Key Lesson:
+- Frequency comparison
+--------------------------------------------------
+
+--------------------------------------------------
+PROBLEM 6: First Non-Repeating Character
+
+Problem Statement:
+Find the first character that does not repeat.
+
+Example:
+Input: swiss
+Output: w
+
+Rules (Strict):
+- Ignore spaces
+- Case-sensitive
+- No LINQ
+- Order matters
+
+Think Before Coding:
+- Why is dictionary order unsafe?
+- How to preserve original order?
+
+Your Task:
+- Count frequency
+- Scan original string again
+
+Key Lesson:
+- Frequency ≠ order
+--------------------------------------------------
+
+--------------------------------------------------
+PROBLEM 7: Longest Word in a Sentence
+
+Problem Statement:
+Find the longest word in a sentence.
+If multiple words have same length, print the first.
+
+Example:
+Input: I love competitive programming
+Output: competitive
+
+Rules (Strict):
+- Ignore digits and punctuation
+- Letters only form words
+- No Split()
+- No LINQ
+
+Think Before Coding:
+- How to detect word boundaries?
+- How to handle last word?
+
+Your Task:
+- Traverse character by character
+- Track longest word
+
+Key Lesson:
+- Boundary detection
+- Avoid O(n²) string building
+--------------------------------------------------
+
+--------------------------------------------------
+SUMMARY — PHASE 3 KEY TAKEAWAYS
+
+- Strings are immutable
+- Avoid string += in loops
+- Use two-pointer for palindrome
+- Use frequency for duplicates and anagrams
+- Order-sensitive problems require original traversal
+- StringBuilder avoids O(n²)
+
+PHASE 3 COMPLETED WHEN:
+You can solve string problems efficiently and correctly.
+--------------------------------------------------
