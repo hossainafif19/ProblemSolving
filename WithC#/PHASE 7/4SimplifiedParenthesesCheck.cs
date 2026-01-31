@@ -4,10 +4,10 @@ Console.WriteLine("");
 
 char[] stack = new char[input.Length];
 int top = -1;
-// Dictionary<char, char> map = new Dictionary<char, char>();
-// map['('] = ')';
-// map['{'] = '}';
-// map['['] = ']';
+Dictionary<char, char> map = new Dictionary<char, char>();
+map['('] = ')';
+map['{'] = '}';
+map['['] = ']';
 
 foreach (char c in input)
 {
@@ -20,15 +20,7 @@ foreach (char c in input)
     {
         //continue;
     }
-    else if (stack[top] == '(' && c == ')')
-    {
-        Pop();
-    }
-    else if (stack[top] == '{' && c == '}')
-    {
-        Pop();
-    }
-    else if (stack[top] == '[' && c == ']')
+    else if (c == map[stack[top]])
     {
         Pop();
     }
