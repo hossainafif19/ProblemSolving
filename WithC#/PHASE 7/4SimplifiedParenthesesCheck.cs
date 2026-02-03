@@ -1,56 +1,81 @@
+// Console.WriteLine("Input:");
+// string input = Console.ReadLine() ?? "";
+// Console.WriteLine("");
+
+// char[] stack = new char[input.Length];
+// int top = -1;
+
+// foreach (char c in input)
+// {
+//     if (c != '(' && c != ')')
+//     {
+//         continue;
+//     }
+//     else if (top == -1)
+//     {
+//         Push(c);
+//     }
+//     else if (c == ')' && stack[top] == '(')
+//     {
+//         Pop();
+//     }
+//     else
+//     {
+//         Push(c);
+//     }
+// }
+
+// if (top == -1)
+//     Console.WriteLine("True");
+// else
+//     Console.WriteLine("False");
+
+// void Push(char c)
+// {
+//     top++;
+//     stack[top] = c;
+// }
+
+// void Pop()
+// {
+//     top--;
+// }
+
+/*-------------------------------------------------*/
+
 Console.WriteLine("Input:");
 string input = Console.ReadLine() ?? "";
 Console.WriteLine("");
 
 char[] stack = new char[input.Length];
 int top = -1;
-Dictionary<char, char> map = new Dictionary<char, char>();
-map['('] = ')';
-map['{'] = '}';
-map['['] = ']';
 
 foreach (char c in input)
 {
+    // ignore everything except '(' and ')'
+    if (c != '(' && c != ')')
+        continue;
 
-    if (top == -1)
+    if (c == '(')
     {
-        Push(c);
+        // push
+        top++;
+        stack[top] = c;
     }
-    else if ((char.IsLetter(c) || c == ' ') && top != -1)
+    else // c == ')'
     {
-        //continue;
-    }
-    else if (c == map[stack[top]])
-    {
-        Pop();
-    }
-    else
-    {
-        Push(c);
+        // pop
+        if (top == -1)
+        {
+            Console.WriteLine("False");
+            return;
+        }
+        top--;
     }
 }
 
+// after processing all characters
 if (top == -1)
-{
     Console.WriteLine("True");
-}
 else
-{
     Console.WriteLine("False");
-}
-
-for (int i = 0; i < stack.Length; i++)
-{
-    Console.WriteLine(stack[i]);
-}
-
-void Push(char c)
-{
-    top++;
-    stack[top] = c;
-}
-
-void Pop()
-{
-    top--;
-}

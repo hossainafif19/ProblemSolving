@@ -1,0 +1,131 @@
+PROJECT: DSA & PROBLEM SOLVING REBUILD (C#)
+OWNER: Afif Hossain
+
+========================================
+PURPOSE
+----------------------------------------
+This document is a CONTEXT HANDOFF file.
+It is meant to be shared in a NEW CHAT so the assistant can:
+- Understand what phases are completed
+- Understand how problems were solved
+- Continue without repeating basics
+- Follow the same learning style (step-by-step, mentor-guided)
+
+========================================
+LANGUAGE & STYLE
+----------------------------------------
+Primary Language: C#
+Approach:
+- No shortcuts
+- No copy-paste answers
+- Step-by-step reasoning
+- Focus on correctness & invariants
+- Interview-oriented thinking
+
+========================================
+PHASE STATUS SUMMARY
+----------------------------------------
+
+PHASE 0 — PROGRAMMING BASICS (COMPLETED)
+- Variables, loops, conditions
+- Input/output handling
+- Basic number problems
+Solved problems:
+- Print 1 to N
+- Sum of first N numbers
+- Even/Odd
+- Max of two numbers
+- Count digits
+Key outcome:
+- Syntax confidence
+- Loop & condition clarity
+
+----------------------------------------
+PHASE 1 — BASIC LOGIC PROBLEMS (COMPLETED)
+Solved problems:
+- Reverse a number
+- Palindrome number
+- Prime number check
+- Fibonacci series
+- Armstrong number
+Key outcome:
+- Step-by-step problem breakdown
+- Mathematical reasoning
+
+----------------------------------------
+PHASE 2 — ARRAYS (COMPLETED)
+Solved problems:
+- Find largest & smallest element
+- Reverse array
+- Count even & odd elements
+- Second largest element (edge cases handled)
+- Check if array is sorted
+- Array palindrome check
+Key outcome:
+- Index-based thinking
+- Boundary & edge-case handling
+
+----------------------------------------
+PHASE 3 — STRINGS (COMPLETED)
+Solved problems:
+- Reverse string
+- Palindrome string
+- Count vowels & consonants
+- Find duplicate characters
+- Check anagram
+- First non-repeating character
+- Longest word in a sentence (optimized with StringBuilder)
+Key outcome:
+- Character traversal
+- Frequency counting
+- O(n) vs O(n²) awareness
+
+----------------------------------------
+PHASE 7 — STACK (IN PROGRESS)
+Problems solved:
+1. Stack implementation using array
+2. Reverse string using stack
+3. Remove adjacent duplicate characters
+4. Simplified parentheses check ((), ignore others)
+5. Full valid parentheses ((), {}, [])
+
+Key concepts learned:
+- Stack LIFO behavior
+- Stack invariant (only opening brackets in stack)
+- Fail-fast logic
+- Prefix correctness
+- Why pushing closing brackets is wrong
+- Difference between 'works' vs 'guaranteed correct'
+
+----------------------------------------
+CURRENT POSITION
+----------------------------------------
+- Stack fundamentals are clear
+- Parentheses problems are understood deeply
+- Interview-level reasoning is improving
+- Next target: MONOTONIC STACK PATTERNS
+
+NEXT PROBLEM TO START
+----------------------------------------
+PHASE 7 — Problem 6:
+Next Greater Element (step by step, beginner-friendly)
+
+========================================
+IMPORTANT LEARNING PREFERENCES
+----------------------------------------
+- Wants to strengthen basics while progressing
+- Prefers alternating between:
+  - One stack problem
+  - One Phase 2/3 reinforcement problem
+- Avoids rushing into interview questions without foundation
+
+========================================
+HOW THE NEXT CHAT SHOULD CONTINUE
+----------------------------------------
+Instruction for assistant:
+"Read this file first.
+Continue from Phase 7 — Next Greater Element.
+Explain slowly, no shortcuts."
+
+========================================
+END OF CONTEXT FILE

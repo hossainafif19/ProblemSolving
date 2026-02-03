@@ -1,0 +1,68 @@
+PHASE 7 — STACK (FOUNDATION → INTERVIEW READY)
+
+GOAL
+Build stack-based thinking and learn to solve problems where order matters (LIFO),
+early failure is critical, and invariants must be maintained.
+
+----------------------------------------
+PROBLEM 1: Implement Stack Using Array
+- Push, Pop, Peek, IsEmpty, ReadAll
+Rules:
+- Use array + top
+- Handle overflow & underflow
+Key Lesson:
+- Stack fundamentals and boundaries
+
+----------------------------------------
+PROBLEM 2: Reverse a String Using Stack
+Input: hello
+Output: olleh
+Rules:
+- No built-in reverse
+- Must use push & pop
+Key Lesson:
+- LIFO behavior
+
+----------------------------------------
+PROBLEM 3: Remove Adjacent Duplicate Characters
+Input: abbaca
+Output: ca
+Rules:
+- One stack
+- O(n)
+Key Lesson:
+- Stack as result-so-far
+
+----------------------------------------
+PROBLEM 4: Simplified Parentheses Check
+Rules:
+- Only ()
+- Ignore other characters
+Key Lesson:
+- Prefix correctness, fail fast
+
+----------------------------------------
+PROBLEM 5: Full Valid Parentheses
+Brackets: (), {}, []
+Rules:
+- Stack contains only opening brackets
+- Closing brackets never pushed
+Key Lesson:
+- Stack invariant
+
+----------------------------------------
+PROBLEM 6: Next Greater Element
+Input: [4,5,2,25]
+Output: [5,25,25,-1]
+Rules:
+- O(n)
+- Monotonic stack
+Key Lesson:
+- Pattern recognition
+
+----------------------------------------
+PROBLEM 7: Evaluate Postfix Expression
+Input: 231*+9-
+Output: -4
+Key Lesson:
+- Stack-based evaluation
