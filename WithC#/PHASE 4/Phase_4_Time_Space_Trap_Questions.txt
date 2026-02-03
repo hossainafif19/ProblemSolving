@@ -1,0 +1,133 @@
+PHASE 4 — TIME & SPACE COMPLEXITY TRAP QUESTIONS (ADVANCED)
+Owner: Afif Hossain
+
+These questions are designed to trick common misunderstandings.
+Analyze carefully. No guessing.
+
+--------------------------------
+TRAP QUESTION 6 — Break Illusion
+--------------------------------
+Code:
+for (int i = 0; i < n; i++)
+{
+    if (arr[i] == target)
+        break;
+}
+
+Task:
+- Find Time Complexity = O(n)
+- Find Space Complexity = O(1)
+
+--------------------------------
+TRAP QUESTION 7 — Nested but NOT Quadratic
+--------------------------------
+Code:
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < i; j++)
+    {
+        Console.WriteLine(i + j);
+    }
+}
+
+Task:
+- Find Time Complexity O(n^2)
+- Find Space Complexity O(1)
+
+--------------------------------
+TRAP QUESTION 8 — Constant Loop Inside Loop
+--------------------------------
+Code:
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < 5; j++)
+    {
+        Console.WriteLine(i * j);
+    }
+}
+
+Task:
+- Find Time Complexity O(n)
+- Find Space Complexity O(1)
+
+--------------------------------
+TRAP QUESTION 9 — Two Separate Loops
+--------------------------------
+Code:
+for (int i = 0; i < n; i++)
+{
+    Console.WriteLine(i);
+}
+
+for (int j = 0; j < n; j++)
+{
+    Console.WriteLine(j);
+}
+
+Task:
+- Find Time Complexity O(n)
+- Find Space Complexity O(1)
+
+--------------------------------
+TRAP QUESTION 10 — Logarithmic Loop
+--------------------------------
+Code:
+int x = n;
+while (x > 1)
+{
+    x = x / 2;
+}
+
+Task:
+- Find Time Complexity O(log n)
+- Find Space Complexity O(1)
+
+--------------------------------
+TRAP QUESTION 11 — Loop with Conditional Heavy Branch
+--------------------------------
+Code:
+for (int i = 0; i < n; i++)
+{
+    if (i == n - 1)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            Console.WriteLine(j);
+        }
+    }
+}
+
+Task:
+- Find Time Complexity O(n)
+- Find Space Complexity O(1)
+
+--------------------------------
+TRAP QUESTION 12 — Array Inside Loop
+--------------------------------
+Code:
+for (int i = 0; i < n; i++)
+{
+    int[] temp = new int[n];
+}
+
+Task:
+- Find Time Complexity O(n)
+- Find Space Complexity O(n)
+
+--------------------------------
+TRAP QUESTION 13 — Recursive Depth Trap
+--------------------------------
+Code:
+void Fun(int n)
+{
+    if (n == 0) return;
+    Fun(n - 1);
+}
+
+Task:
+- Find Time Complexity O(n)
+- Find Space Complexity O(n)
+
+--------------------------------
+END OF TRAP QUESTIONS
+--------------------------------
