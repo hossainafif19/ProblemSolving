@@ -1,0 +1,182 @@
+PHASE 5 — BOTTOM-UP DYNAMIC PROGRAMMING (DETAILED LECTURE NOTES)
+Owner: Afif Hossain
+
+================================
+1. WHAT IS BOTTOM-UP DP?
+================================
+Bottom-Up Dynamic Programming solves the SMALLEST subproblems first
+and builds the final answer step by step using iteration.
+
+It does NOT use recursion.
+It does NOT use the call stack.
+
+Think of it as:
+Solve small -> use it to solve bigger -> repeat until final answer.
+
+--------------------------------
+2. WHY DO WE NEED BOTTOM-UP DP?
+--------------------------------
+Pure recursion can be slow due to repeated work.
+Memoization (Top-Down DP) fixes repeated work but still uses stack space.
+Bottom-Up DP:
+• Avoids recursion stack
+• Often cleaner for iterative problems
+• Prevents stack overflow
+• Sometimes allows space optimization
+
+--------------------------------
+3. EXAMPLE 1 — FIBONACCI (STEP BY STEP)
+--------------------------------
+
+Problem:
+Fib(n) = Fib(n-1) + Fib(n-2)
+
+Step 1 — Identify State:
+Let dp[i] = Fibonacci number at index i
+
+Step 2 — Base Cases:
+dp[0] = 0
+dp[1] = 1
+
+Step 3 — Transition:
+dp[i] = dp[i-1] + dp[i-2]
+
+--------------------------------
+CODE (BOTTOM-UP VERSION)
+--------------------------------
+
+int Fib(int n)
+{
+    if (n <= 1) return n;
+
+    int[] dp = new int[n + 1];
+
+    dp[0] = 0;
+    dp[1] = 1;
+
+    for (int i = 2; i <= n; i++)
+    {
+        dp[i] = dp[i - 1] + dp[i - 2];
+    }
+
+    return dp[n];
+}
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+--------------------------------
+4. TRACE EXAMPLE — Fib(5)
+--------------------------------
+
+i = 2 → dp[2] = 1
+i = 3 → dp[3] = 2
+i = 4 → dp[4] = 3
+i = 5 → dp[5] = 5
+
+Final Answer = 5
+
+--------------------------------
+5. SPACE OPTIMIZATION (VERY IMPORTANT)
+--------------------------------
+
+Observation:
+To compute dp[i], we only need:
+dp[i-1] and dp[i-2]
+
+So full array is unnecessary.
+
+--------------------------------
+OPTIMIZED VERSION
+--------------------------------
+
+int Fib(int n)
+{
+    if (n <= 1) return n;
+
+    int prev2 = 0;
+    int prev1 = 1;
+
+    for (int i = 2; i <= n; i++)
+    {
+        int current = prev1 + prev2;
+        prev2 = prev1;
+        prev1 = current;
+    }
+
+    return prev1;
+}
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+--------------------------------
+6. GENERAL DP THINKING FRAMEWORK
+--------------------------------
+
+Every DP problem follows 3 steps:
+
+1. Define the STATE
+   What does dp[i] represent?
+
+2. Define the TRANSITION
+   How is dp[i] computed from smaller states?
+
+3. Define BASE CASES
+   What are the smallest known answers?
+
+If you can answer these 3 clearly,
+you can build a DP solution.
+
+--------------------------------
+7. TOP-DOWN VS BOTTOM-UP (CLEAR COMPARISON)
+--------------------------------
+
+Top-Down (Memoization):
+• Uses recursion
+• Uses call stack
+• Easier to write first
+• Space: O(n) + stack
+
+Bottom-Up:
+• Uses loops
+• No recursion stack
+• Often safer
+• Can optimize space
+
+--------------------------------
+8. WHEN TO USE BOTTOM-UP
+--------------------------------
+
+Use Bottom-Up when:
+• All subproblems must be solved
+• Recursion depth may be large
+• Stack overflow is possible
+• Iterative thinking is clearer
+
+--------------------------------
+9. COMMON BEGINNER MISTAKES
+--------------------------------
+
+❌ Forgetting base cases
+❌ Wrong loop order
+❌ Using full array when only few states are needed
+❌ Not understanding what dp[i] represents
+
+--------------------------------
+10. BIG PICTURE
+--------------------------------
+
+Recursion
+   ↓
+Memoization (Top-Down DP)
+   ↓
+Bottom-Up DP
+   ↓
+Space Optimization
+
+This is the full evolution of solving repeated subproblem patterns.
+
+================================
+END OF PHASE 5 — BOTTOM-UP DP LECTURE
+================================

@@ -1,0 +1,77 @@
+PHASE 5 — RECURSION PRACTICE QUESTIONS
+Owner: Afif Hossain
+
+--------------------------------
+QUESTION 1
+--------------------------------
+void Print(int n)
+{
+    if (n == 0) return;
+    Print(n - 1);
+    Console.WriteLine(n);
+}
+
+Tasks:
+- Output for Print(3)
+- Time Complexity
+- Space Complexity
+
+--------------------------------
+QUESTION 2
+--------------------------------
+int Sum(int n)
+{
+    if (n == 0) return 0;
+    return n + Sum(n - 1);
+}
+
+Tasks:
+- Return value for Sum(4)
+- Time Complexity
+- Space Complexity
+
+--------------------------------
+QUESTION 3
+--------------------------------
+void Fun(int n)
+{
+    if (n == 0) return;
+    Fun(n / 2);
+    Console.WriteLine(n);
+}
+
+Tasks:
+- Output for Fun(16)
+- Time Complexity
+- Space Complexity
+
+--------------------------------
+QUESTION 4
+--------------------------------
+int Fun(int n)
+{
+    if (n == 1) return 1;
+    return Fun(n - 1) + Fun(n - 1);
+}
+
+Tasks:
+- Time Complexity
+- Space Complexity
+
+--------------------------------
+QUESTION 5
+--------------------------------
+void Fun(int n)
+{
+    if (n <= 1) return;
+    Fun(n - 1);
+    Fun(n - 2);
+}
+
+Tasks:
+- Time Complexity
+- Space Complexity
+
+--------------------------------
+END OF QUESTIONS
+--------------------------------

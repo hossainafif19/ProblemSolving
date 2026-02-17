@@ -1,0 +1,84 @@
+PHASE 5 — RECURSION (LECTURE NOTES)
+Owner: Afif Hossain
+
+================================
+1. WHAT IS RECURSION
+================================
+Recursion is when a function calls itself to solve a smaller version of the same problem.
+
+Every recursion MUST have:
+1. Base Case  -> stops recursion
+2. Recursive Case -> moves toward base case
+
+Without a base case, recursion causes infinite calls and stack overflow.
+
+--------------------------------
+2. RECURSION VS LOOP
+--------------------------------
+Loop:
+- Uses one stack frame
+- Controlled by index
+- Space O(1)
+
+Recursion:
+- Each call creates a new stack frame
+- Function waits for inner calls
+- Space depends on recursion depth
+
+--------------------------------
+3. SIMPLE RECURSION EXAMPLE
+--------------------------------
+void Fun(int n)
+{
+    if (n == 0) return;
+    Console.WriteLine(n);
+    Fun(n - 1);
+}
+
+Output for Fun(3):
+3
+2
+1
+
+--------------------------------
+4. ORDER OF EXECUTION
+--------------------------------
+If work is BEFORE recursive call -> descending order
+If work is AFTER recursive call  -> ascending order
+
+--------------------------------
+5. CALL STACK (IMPORTANT)
+--------------------------------
+For Fun(3), stack grows like:
+Fun(3)
+Fun(2)
+Fun(1)
+
+Stack shrinks when base case is reached.
+
+--------------------------------
+6. TIME & SPACE IN RECURSION
+--------------------------------
+Case 1: Fun(n-1)
+Time  -> O(n)
+Space -> O(n)
+
+Case 2: Fun(n/2)
+Time  -> O(log n)
+Space -> O(log n)
+
+Case 3: Two recursive calls
+Time  -> O(2^n)
+Space -> O(n)
+
+--------------------------------
+7. KEY RULES (MEMORIZE)
+--------------------------------
+• Base case is mandatory
+• Space complexity = recursion depth
+• Time complexity = total number of calls
+• Recursion uses stack memory
+
+================================
+END OF LECTURE
+================================
