@@ -1,0 +1,147 @@
+BIG-O SPEED TEST (ROUND 2)
+
+Write Time Complexity and Space Complexity for each problem.
+
+--------------------------------
+QUESTION 1
+--------------------------------
+for (int i = 0; i < n; i++)
+{
+    Console.WriteLine(i);
+}
+
+Time =
+Space =
+
+
+--------------------------------
+QUESTION 2
+--------------------------------
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < n; j++)
+    {
+        Console.WriteLine(i + j);
+    }
+}
+
+Time =
+Space =
+
+
+--------------------------------
+QUESTION 3
+--------------------------------
+for (int i = 1; i < n; i *= 2)
+{
+    Console.WriteLine(i);
+}
+
+Time =
+Space =
+
+
+--------------------------------
+QUESTION 4
+--------------------------------
+for (int i = n; i > 0; i /= 2)
+{
+    Console.WriteLine(i);
+}
+
+Time =
+Space =
+
+
+--------------------------------
+QUESTION 5
+--------------------------------
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < i; j++)
+    {
+        Console.WriteLine(i + j);
+    }
+}
+
+Time =
+Space =
+
+
+--------------------------------
+QUESTION 6
+--------------------------------
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < n; j += 2)
+    {
+        Console.WriteLine(i + j);
+    }
+}
+
+Time =
+Space =
+
+
+--------------------------------
+QUESTION 7
+--------------------------------
+int i = 1;
+
+while (i < n)
+{
+    i = i * 3;
+}
+
+Time =
+Space =
+
+
+--------------------------------
+QUESTION 8
+--------------------------------
+for (int i = 0; i < n; i++)
+{
+    int x = n;
+
+    while (x > 0)
+    {
+        x /= 2;
+    }
+}
+
+Time =
+Space =
+
+
+--------------------------------
+QUESTION 9
+--------------------------------
+for (int i = 0; i < n; i++)
+{
+    Console.WriteLine(i);
+}
+
+for (int j = 0; j < n * n; j++)
+{
+    Console.WriteLine(j);
+}
+
+Time =
+Space =
+
+
+--------------------------------
+QUESTION 10 (RECURSION)
+--------------------------------
+void Fun(int n)
+{
+    if (n <= 1)
+        return;
+
+    Fun(n / 2);
+    Fun(n / 2);
+}
+
+Time =
+Space =

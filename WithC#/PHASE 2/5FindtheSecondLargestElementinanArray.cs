@@ -1,4 +1,41 @@
-using System;
+Console.WriteLine("Enter the size of array N.");
+short n = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine("");
+
+Console.WriteLine("Enter the element of array.");
+short[] array = new short[n];
+for (short i = 0; i < n; i++)
+    array[i] = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine("");
+
+short firstLarge = short.MinValue;
+short secondLarge = short.MinValue;
+bool isfirstLarge = false;
+bool isSecondLarge = false;
+
+foreach (short val in array)
+{
+    if (val > firstLarge || !isfirstLarge)
+    {
+        if (isfirstLarge)
+            isSecondLarge = true;
+        secondLarge = firstLarge;
+        firstLarge = val;
+        isfirstLarge = true;
+    }
+    else if ((firstLarge > val) && (val >= secondLarge))
+    {
+        isSecondLarge = true;
+        secondLarge = val;
+    }
+}
+
+if (isSecondLarge)
+    Console.WriteLine(secondLarge);
+else
+    Console.WriteLine("No second large found");
+
+/*-----------------------------------------------------------------------*/
 
 // Console.WriteLine("Enter size of array N");
 // int arraysize = Convert.ToInt32(Console.ReadLine());
@@ -43,47 +80,47 @@ using System;
 
 /*-----------------------------------------------------------------------*/
 
-Console.WriteLine("Enter size of array N");
-int arraysize = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("");
+// Console.WriteLine("Enter size of array N");
+// int arraysize = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("");
 
-Console.WriteLine("Enter element of array");
-int[] array = new int[arraysize];
-for (int i = 0; i < arraysize; i++)
-{
-    array[i] = Convert.ToInt32(Console.ReadLine());
-}
-Console.WriteLine("");
+// Console.WriteLine("Enter element of array");
+// int[] array = new int[arraysize];
+// for (int i = 0; i < arraysize; i++)
+// {
+//     array[i] = Convert.ToInt32(Console.ReadLine());
+// }
+// Console.WriteLine("");
 
-int firstLarge = array[0];
-int secondLarge = 0;
-bool foundSecond = false;
+// int firstLarge = array[0];
+// int secondLarge = 0;
+// bool foundSecond = false;
 
-for (int i = 0; i < arraysize; i++)
-{
-    if (array[i] > firstLarge)
-    {
-        secondLarge = firstLarge;
-        firstLarge = array[i];
-        foundSecond = true;
-    }
-    else if (array[i] < firstLarge)
-    {
-        if (!foundSecond || array[i] > secondLarge)
-        {
-            secondLarge = array[i];
-            foundSecond = true;
-        }
-    }
-}
-Console.WriteLine("");
+// for (int i = 0; i < arraysize; i++)
+// {
+//     if (array[i] > firstLarge)
+//     {
+//         secondLarge = firstLarge;
+//         firstLarge = array[i];
+//         foundSecond = true;
+//     }
+//     else if (array[i] < firstLarge)
+//     {
+//         if (!foundSecond || array[i] > secondLarge)
+//         {
+//             secondLarge = array[i];
+//             foundSecond = true;
+//         }
+//     }
+// }
+// Console.WriteLine("");
 
-if (secondLarge != firstLarge)
-{
-    Console.WriteLine("Second largest element array " + secondLarge);
-}
-else
-{
-    Console.WriteLine("No second largest");
-}
+// if (secondLarge != firstLarge)
+// {
+//     Console.WriteLine("Second largest element array " + secondLarge);
+// }
+// else
+// {
+//     Console.WriteLine("No second largest");
+// }
 
